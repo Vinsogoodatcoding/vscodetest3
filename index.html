@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <script src="script.js"></script>
+    <!---
+    Write a window.onload event that does go to localstorage, get the key, and push it into the empty array
+    -->
+    <script>
+        window.onload = function() {
+            if (localStorage.getItem('website') !== null) {
+            console.log('The website key exists')
+            let a = localStorage.getItem('food')
+            yo.push(a)
+            }   
+            else {
+            console.log('The website key does NOT exist')
+            }
+        }
+    </script>
+</head>
+<body>
+    <!---
+    Build a select dropdown box and store values in localstorage to be called later
+    -->
+
+    
+    <select id="foods">
+        <option value = "Apple">Apple</option>
+        <option value = "Banana">Banana</option>
+        <option value = "Pear">Pear</option>
+    </select>
+    <button onclick="getfood()">Get Food</button>
+    <button onclick="clearlocal()">Clear button</button>
+    
+</body>
+</html>
