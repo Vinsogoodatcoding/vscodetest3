@@ -5,7 +5,7 @@ let yo = []
 function getfood() {
     
     //take whatever the user selected and add it to the array
-    let x = document.getElementBydId('foods').value
+    let x = document.getElementById('foods').value
     yo.push(x)
     //get localstorage key and add it to the empty arrya
     let y = localStorage.getItem('food')
